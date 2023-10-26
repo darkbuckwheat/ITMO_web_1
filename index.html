@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>web-lab-1</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/load_previous.js"></script>
+</head>
+<body>
+    <div id="elements-table">
+        <div>
+            <div colspan="2" id="header">
+                <h1>Student: Labyntsev Gregory</h1>
+                <h2>group: p32301<br>var: 3208</h2>
+            </div>
+        </div>
+        
+        <div>
+            <div id="graph_column" class="one_line">
+                <canvas id="graphic" width="600px" height="600px"></canvas>
+                <script src="js/graphics.js"></script>
+            </div>
+
+            <div id="input_column" class="one_line">
+                <form class="js-form">
+                    <div id="x-group" class="group">
+                        <p>choose the value of x</p>
+                        <input id="x=-3" name="x" type="radio" value="-3">
+                        <label for="x=-3">-3</label><br>
+                        <input id="x=-2" name="x" type="radio" value="-2">
+                        <label for="x=-2">-2</label><br>
+                        <input id="x=-1" name="x" type="radio" value="-1">
+                        <label for="x=-1">-1</label><br>
+                        <input id="x=0" name="x" type="radio" value="0">
+                        <label for="x=0">0</label><br>
+                        <input id="x=1" name="x" type="radio" value="1">
+                        <label for="x=1">1</label><br>
+                        <input id="x=2" name="x" type="radio" value="2">
+                        <label for="x=2">2</label><br>
+                        <input id="x=3" name="x" type="radio" value="3">
+                        <label for="x=3">3</label><br>
+                        <input id="x=4" name="x" type="radio" value="4">
+                        <label for="x=4">4</label><br>
+                        <input id="x=5" name="x" type="radio" value="5">
+                        <label for="x=5">5</label><br>
+                    </div>
+
+                    <div id="y-group" class="group">
+                        <p></p>
+                        <label for="y">choose the value of y</label>
+                        <p></p>
+                        <input id="y" name="y" type="text" placeholder="type a number between -3 and 5" class="y"><br>
+                    </div>
+
+                    <div id="r-group" class="group">
+                        <p>choose the value of r</p>
+                        <input id="r=1" name="r" type="radio" value="1">
+                        <label for="r=1">1</label><br>
+                        <input id="r=2" name="r" type="radio" value="2">
+                        <label for="r=2">2</label><br>
+                        <input id="r=3" name="r" type="radio" value="3">
+                        <label for="r=3">3</label><br>
+                        <input id="r=4" name="r" type="radio" value="4">
+                        <label for="r=4">4</label><br>
+                        <input id="r=5" name="r" type="radio" value="5">
+                        <label for="r=5">5</label><br>
+                    </div>    
+
+                    <input type="submit" value="check point" onclick="validate()">
+                </form>
+            </div>
+        </div>
+
+        <div>
+            <div colspan="2" id="results_column">
+                <button id="reset_table">reset table</button><br>
+                <script src="js/reset.js"></script>
+                <table class="results">
+                    <thead>
+                        <tr>
+                            <th>x value</th>
+                            <th>y value</th>
+                            <th>r value</th>
+                            <th>result</th>
+                            <th>attempt time</th>
+                            <th>processing time in milliseconds</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
